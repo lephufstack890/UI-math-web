@@ -1,0 +1,202 @@
+/* Shared readable type scale. Keep component structure and behavior unchanged. */
+:root{--ui-font:'Segoe UI',Arial,sans-serif;--ui-body:14px;--ui-small:12px;--ui-ink:#244a64;--ui-muted:#536d7f;--ui-link:#126b99;--ui-weight:400;--ui-heading-weight:600}
+body{font-family:var(--ui-font);font-size:14px;line-height:1.6;font-weight:400;color:var(--ui-ink)}
+body :is(button,input,select,textarea){font-family:var(--ui-font);font-weight:400}
+body :is(h1,h2,h3,h4){font-family:var(--ui-font);font-weight:600;line-height:1.35}
+body :is(p,li,dt,dd){line-height:1.6}
+body :is(small,.mini-label,.eyebrow,.sample-badge,.demo-note,.sidebar-note,.preview-label,.footer-bottom,.catalog-count,.catalog-pagination,.metadata-sample,.inspiration-note,.teacher-profile-note,.teacher-profile-stats span,.teacher-profile-avatar span,.teacher-profile-top .catalog-rating small,.teacher-profile-role,.teacher-profile-unit,.teacher-profile-summary,.teacher-profile-region,.teacher-demo-badge,.teacher-expert,.auth-choice-note,.auth-legal,.auth-status,.stats-status,.stats-chart-days,.story-role){font-size:12px;line-height:1.5}
+body :is(.catalog-metadata dt,.catalog-metadata dd,.catalog-metadata .companion-teacher-list li,.teacher-profile-achievements p,.teacher-profile-stats span,.teacher-profile-note,.auth-demo p,.auth-demo strong,.footer-grid button,.footer-grid>div:first-child p,.roadmap-body>p,.roadmap-body li,.learning-tip p,.workspace-options span,.resources small,.faq summary,.faq details>p,.support p,.support li,.audience-grid span){font-size:13px;line-height:1.6}
+body :is(.section-card-heading p,.section-card-body li,.teacher-profile-summary,.auth-form-panel label,.auth-form-panel input,.auth-form-panel select,.auth-switch,.dialog-content>p){font-size:14px;line-height:1.6}
+body :is(.section-card-heading h3,.roadmap-body h3,.teacher-profile-identity h3){font-size:18px;font-weight:600}
+body :is(.member-heading h1,.auth-form-panel h1){font-size:26px;font-weight:600}
+body :is(.catalog-metadata dt,.teacher-profile-note,.teacher-profile-summary,.teacher-profile-role,.teacher-profile-unit,.teacher-profile-stats span,.auth-choice-note,.auth-legal,.preview-label,.footer-bottom,.demo-note,.sidebar-note,.resources small,.mini-label,.metadata-sample){color:var(--ui-muted)}
+body .button{font-size:13px;font-weight:600;line-height:1.4}
+body .brand small{font-size:10px;font-weight:400;line-height:1.4;max-width:220px;white-space:normal}
+body .teacher-profile-avatar span{font-size:10px;line-height:16px}
+body .teacher-profile-top{flex-wrap:wrap;min-height:52px}
+body .teacher-profile-top :is(.teacher-expert,.teacher-demo-badge){font-size:10px;line-height:1.5}
+body .teacher-profile-top .catalog-rating small{font-size:11px}
+body .teacher-profile-card .teacher-profile-unit{min-height:64px}
+body .teacher-profile-summary{min-height:68px}
+body .teacher-profile-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+body .auth-form-panel input,body .auth-form-panel select{height:40px;min-height:40px}
+body .auth-page .auth-visual:before{filter:none}
+body .auth-page .auth-visual:after{background:linear-gradient(180deg,transparent 0%,transparent 53%,#edf5f3c9 77%,#edf5f3fa 100%)}
+body .auth-page .auth-submit{background:#1688b8;border-color:#107ba9;color:#fff;box-shadow:0 2px 7px #166d8e20}
+body .auth-page .auth-submit:hover{background:#0d739e}
+body .auth-page{background:#edf6fa}
+body .auth-page .auth-visual{background:#e7f2f5}
+body .auth-page .auth-form-panel{background:#fff}
+body .auth-page .auth-demo{background:#fff9eb;border-color:#e2d7b8;color:#695b3c}
+body .admin-app{font-family:var(--ui-font);font-size:14px;line-height:1.6;font-weight:400;--a-muted:#536d7f}
+body .admin-app :is(small,.admin-nav-label,.admin-sidebar-note,.admin-breadcrumb,.admin-demo-notice,.admin-kpi small,.admin-workspace small){font-size:12px;line-height:1.5}
+body .admin-app :is(button,input,select,textarea,td,th,label,p){font-size:13px;line-height:1.6}
+body .admin-app :is(h1,h2,h3){font-weight:600}
+body .admin-app h1{font-size:26px}body .admin-app h2{font-size:20px}body .admin-app h3{font-size:17px}
+body .admin-app .admin-brand small{font-size:10px;font-weight:400;line-height:1.4}
+body .admin-app .admin-sidebar nav button{font-weight:400}body .admin-app .admin-sidebar nav button.active{font-weight:600}
+@media(max-width:700px){body :is(.member-heading h1,.auth-form-panel h1){font-size:23px}body .brand small{font-size:9px;max-width:180px}body .teacher-profile-card .teacher-profile-unit,body .teacher-profile-summary{min-height:0}body .auth-choice-grid{gap:8px}body .auth-choice-grid select{font-size:12px}body .auth-page .auth-form-panel{padding:18px}body .admin-app h1{font-size:23px}}
+body :is(.notice strong,.ticker,.grade-grid button,.inspiration-cover>span,.inspiration-portrait-label,.inspiration-role,.shortcut h3>span,.stories-demo,.story-image>span,.story-person p,.stories-footer p,.stats-chart-placeholder span,.stats-chart-days span,.stats-resource-grid span,.tip-practice span,.member-toolbar label,.member-heading label,.catalog-intro p,.section-card-image>span,.honors-scroll-hint,.honors-table caption,.honors-badge){font-size:12px;line-height:1.5;color:#536d7f}
+body .teacher-profile-top .catalog-rating small{font-size:12px;color:#6f634a}
+body .auth-page .auth-visual>.eyebrow{font-size:12px;color:#315d62}
+body .auth-page .auth-submit{background:#127ba8;border-color:#0f709a}
+body .admin-app :is(.admin-demo-badge,.admin-eyebrow,.admin-soft-label,.admin-status b,.admin-footer span,.admin-module strong){font-size:12px;line-height:1.5}
+body .stats-chart-days{gap:1px}body .stats-chart-days span{font-size:10px}
+body .teacher-inspiration .inspiration-role,body .companion-stories p,body .stories-ribbon p,body main label,body .admin-app .admin-quick strong{font-size:12px;line-height:1.5}
+@media(max-width:700px){body .grade-panel{min-width:0;max-width:100%;width:100%;box-sizing:border-box}body .grade-grid{grid-template-columns:repeat(3,minmax(0,1fr));min-width:0}body .grade-grid button{min-width:0;padding-inline:3px}}
+.honors-student{display:flex;align-items:center;gap:10px;min-width:230px}.honors-avatar{width:42px;height:42px;flex:0 0 42px;border-radius:50%;object-fit:cover;object-position:center 30%;border:2px solid #d6e7ef;background:#f2f8fb}.honors-student>div{min-width:0}.honors-student strong{font-weight:600}.honors-student small{display:block}
+body .teacher-profile-card .teacher-profile-top{min-height:0;align-items:flex-start;margin-bottom:4px}body .teacher-profile-card .teacher-profile-identity{margin:4px 0 3px;min-height:62px}body .teacher-profile-card .teacher-profile-info{padding-top:14px}body .teacher-profile-card .teacher-profile-top .catalog-rating{gap:2px}
+body .teacher-profile-card .teacher-profile-identity{align-items:flex-start;padding-top:2px}body .teacher-profile-card .teacher-profile-identity>div:last-child{padding-top:2px}
+.home-list-actions{display:flex;flex-direction:column;align-items:center;gap:7px;margin:18px 0 12px}.home-list-actions>span{font-size:12px;line-height:1.5;color:#536d7f}.home-list-actions .button{min-height:40px;padding:10px 18px}.home-list-actions button[aria-expanded=true] svg{transform:rotate(180deg)}.home-list-actions button:focus-visible{outline:3px solid #117ba8;outline-offset:3px}@media(max-width:400px){.home-list-actions .button{font-size:12px;max-width:100%;white-space:normal}}
+.discovery-page{padding-bottom:24px}.discovery-page .stories-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.discovery-page .section-card-body ol{padding-left:20px;margin-bottom:18px}.discovery-page .section-card-body ol li{display:list-item}.discovery-page .stories-heading h2{font-size:20px}@media(max-width:1023px){.discovery-page .stories-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.discovery-page .stories-grid{grid-template-columns:1fr}}
+body .stories-together{justify-content:flex-start;align-items:center;gap:16px;padding:12px;background:#edf6f8}body .stories-together .together-art{display:block;width:132px;height:auto;aspect-ratio:718/537;object-fit:contain;border-radius:9px;flex:0 0 132px;border:1px solid #d6e5e9}body .stories-together>div{min-width:0}body .stories-together strong{font-size:16px;font-weight:600}body .stories-together p{font-size:12px;line-height:1.6}@media(max-width:700px){body .stories-together{gap:11px;padding:10px}body .stories-together .together-art{width:96px;flex-basis:96px}body .stories-together strong{font-size:14px}}@media(max-width:360px){body .stories-together{flex-direction:column;align-items:flex-start}body .stories-together .together-art{width:112px;flex-basis:auto}}
+
+/* Full-bleed companion scene: readable text, original proportions, faces on right. */
+body .stories-together{position:relative;isolation:isolate;overflow:hidden;display:flex;flex-direction:row;align-items:center;aspect-ratio:3/1;min-height:0;padding:20px 4%;border:1px solid #c6e0e8;border-radius:14px;background:#d6effc;box-sizing:border-box}
+body .stories-together .together-art{position:absolute;inset:0;z-index:-1;width:100%;height:100%;aspect-ratio:auto;object-fit:cover;object-position:center;border:0;border-radius:0;max-width:none}
+body .stories-together>div{width:42%;max-width:400px;position:relative;text-align:left}
+body .stories-together strong{display:block;font-size:clamp(16px,1.65vw,23px);line-height:1.3;color:#173f59;text-wrap:balance;font-weight:600}
+body .stories-together p{font-size:12px;line-height:1.5;color:#244c66;margin:9px 0 0;text-wrap:balance}
+@media(max-width:700px){body .stories-together{aspect-ratio:3/2;align-items:flex-end;padding:0}body .stories-together .together-art{width:100%;height:100%;object-fit:cover;object-position:right center;flex-basis:auto}body .stories-together>div{width:100%;max-width:none;padding:12px 14px;background:linear-gradient(180deg,#eef8f5e8,#eef8f5fa)}body .stories-together strong{font-size:16px;line-height:1.3}body .stories-together p{font-size:12px;line-height:1.4;margin-top:5px}}
+@media(max-width:360px){body .stories-together>div{padding:8px 11px}body .stories-together strong{font-size:14px;line-height:1.25}body .stories-together p{font-size:11px;line-height:1.35;margin-top:4px}}
+/* Shared action shape, based on companion-teacher profile buttons. */
+:root{--ui-button-radius:9px}
+body button,body .button,body .admin-app button,body .admin-app .admin-btn{border-radius:var(--ui-button-radius)}
+body .button,body .admin-app .admin-btn{min-height:38px;max-width:100%;white-space:normal}
+body button:focus-visible,body .button:focus-visible{outline:3px solid #126b99;outline-offset:3px}
+@media(pointer:coarse){body .button,body .admin-app .admin-btn,body .icon-button{min-height:44px}}
+/* Shape normalization deliberately wins historical component overrides. */ body button,body .button,body .admin-app button,body .admin-app .admin-btn{border-radius:var(--ui-button-radius)!important}
+/* Preserve the existing regional strip; keep sample text readable on its blue background. */ body .region-bar .ticker{color:#fff}
+/* Two identical tracks create a continuous seam at a constant 20px/second. */
+body .region-bar .continuous-ticker{display:flex;width:max-content;padding:0;animation:region-continuous var(--ticker-duration,60s) linear infinite;will-change:transform}
+.region-bar .ticker-copy{display:block;flex:none;padding-right:40px;white-space:nowrap}
+@keyframes region-continuous{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+body .region-bar .continuous-ticker.paused,.region-bar:hover .continuous-ticker,.region-bar:focus-within .continuous-ticker{animation-play-state:paused}
+.region-bar .ticker-window:focus-visible{outline:2px solid #fff;outline-offset:2px}
+@media(prefers-reduced-motion:reduce){body .region-bar .continuous-ticker{animation:none;transform:none;will-change:auto}.region-bar .ticker-duplicate{display:none}.region-bar .ticker-window{overflow-x:auto;mask-image:none;scrollbar-width:thin}.region-bar .ticker-copy{padding-right:15px}}
+
+/* 2026-11-09 type audit: final rules win compact legacy component styles. */
+:root {
+  --ui-detail: 13px;
+  --ui-page-title: 26px;
+  --ui-section-title: 23px;
+  --ui-card-title: 18px;
+}
+body { font-size: var(--ui-body); }
+body :is(.hero h1, .panel h2, .section-heading h2, .stories-heading h2,
+  .story-person h3, .shortcut h3, .sat h3, .chocon h3, .auth-visual h2,
+  .teacher-inspiration .inspiration-body h2, .faq h2, .support h2) {
+  font-weight: var(--ui-heading-weight);
+  line-height: 1.35;
+}
+body :is(.section-heading h2, .stories-heading h2, .faq h2, .support h2) {
+  font-size: var(--ui-section-title);
+}
+body .discovery-page .stories-heading h2 { font-size: 20px; }
+body .auth-page .auth-visual h2 { font-size: var(--ui-page-title); }
+
+/* Keep functional text readable, including Vietnamese labels with icons. */
+body :is(.hero .hero-benefits span, .notice>a, .stories-kicker, .story-avatar,
+  .topic-panel button, .teacher-preview strong, .resources strong,
+  .achievement-row span, .member-heading-compact .member-toolbar label) {
+  font-size: var(--ui-small);
+  line-height: 1.5;
+}
+body :is(.hero .hero-benefits span, .stories-kicker, .story-avatar,
+  .teacher-preview strong, .resources strong, .notice>a) {
+  font-weight: var(--ui-heading-weight);
+}
+body .hero .hero-benefits { flex-wrap: wrap; }
+body .teacher-profile-card .teacher-profile-info .teacher-profile-unit {
+  font-size: var(--ui-small);
+  line-height: 1.6;
+}
+body .stats-chart-days>span:last-child { font-size: 10px; }
+body .stories-together p { font-size: var(--ui-small); line-height: 1.5; }
+
+/* Content actions share one size; the compact header uses 12px on mobile. */
+body :is(.hero .button, .site-header .login, .member-heading-compact>.button,
+  .teacher-profile-card .teacher-profile-info>.button, .section-card-body .button,
+  .parent-banner .button, .shortcut .button, .workspace .button, .resources .button,
+  .teacher-directory .button, .home-list-actions .button, .roadmap-body button) {
+  font-size: var(--ui-detail);
+  font-weight: var(--ui-heading-weight);
+  line-height: 1.4;
+  white-space: normal;
+}
+
+/* Information pages follow the same page/card scale; prose gets extra leading. */
+body .info-page .info-hero h1 { font-size: var(--ui-page-title); line-height: 1.35; }
+body .info-page :is(.info-hero p, .info-card p, .info-feature p) {
+  font-size: var(--ui-body);
+  line-height: 1.7;
+}
+body .info-page .info-feature h2 { font-size: var(--ui-section-title); line-height: 1.35; }
+body .info-page .info-contact-panel h2 { font-size: 20px; }
+body .info-page :is(.info-card h2, .info-next h2) { font-size: var(--ui-card-title); }
+
+/* Correct selectors for admin labels, warnings and list states. */
+body .admin-app :is(.admin-crumb, .admin-disclaimer, .admin-region, .admin-status,
+  .admin-pagination, .admin-dialog-note, .admin-quick-grid button span,
+  .admin-quick-grid button strong) {
+  font-size: var(--ui-small);
+  line-height: 1.5;
+}
+body .admin-app :is(.admin-quick-grid button strong, .admin-disclaimer b,
+  .admin-action-row strong, td strong, th) { font-weight: var(--ui-heading-weight); }
+body .admin-app :is(.admin-region, .admin-pagination, .admin-crumb,
+  .admin-action-row small, .admin-quick-grid button span, td small, th) {
+  color: var(--ui-muted);
+}
+/* Existing admin CSS declares these properties important. */
+body .admin-app .admin-btn {
+  font-size: var(--ui-detail) !important;
+  font-weight: var(--ui-heading-weight) !important;
+  line-height: 1.4;
+}
+@media (max-width:700px) {
+  :root { --ui-page-title: 23px; --ui-section-title: 21px; }
+  body .site-header .header-inner .login { font-size: var(--ui-small); }
+}
+/* Final audit findings: compact honors metadata and teacher names. */
+body :is(.honors-title p, .honors-pagination, .honors-footnote) {
+  font-size: var(--ui-small);
+  line-height: 1.6;
+}
+body .teacher-profile-card .teacher-profile-identity h3 {
+  font-size: var(--ui-card-title);
+  font-weight: var(--ui-heading-weight);
+}
+/* Status colors retain their meaning with readable contrast on the same fills. */
+body .admin-app .admin-status.pending { color: #755a0e; }
+body .admin-app .admin-status.reviewed { color: #22684d; }
+body .admin-app .admin-status.draft { color: var(--ui-muted); }
+/* Cross-page comparison against home: align the remaining semantic roles. */
+body .auth-page .auth-form-panel label { font-weight: var(--ui-heading-weight); }
+body .teacher-profile-card .teacher-profile-info .teacher-profile-summary {
+  font-size: var(--ui-detail);
+  line-height: 1.6;
+}
+body .info-page .info-contact-panel h2 {
+  font-size: var(--ui-section-title);
+  line-height: 1.35;
+}
+/* Member catalog spacing: natural text height instead of legacy blank rows. */
+body .member-page .section-card-heading h3 {
+  min-height: 0;
+  margin: 6px 0 8px;
+}
+body .member-page .section-card-heading p {
+  min-height: 0;
+  margin: 0 0 12px;
+}
+body .member-page .section-card-body > ul,
+body .member-page .section-card-body > ol {
+  display: grid;
+  flex: 0 0 auto;
+  align-content: start;
+  gap: 8px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+body .member-page .section-card-body > .button { margin-top: auto; }

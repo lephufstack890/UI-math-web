@@ -1,0 +1,9 @@
+/* Preserve the original hero frame and copy. Images alone crossfade. */
+.carousel { isolation: isolate; }
+.scene { position: relative; isolation: isolate; order: 0; width: 100%; aspect-ratio: 1774 / 440; overflow: hidden; }
+.slide { position: absolute; inset: 0; transition: opacity 550ms ease-in-out; pointer-events: none; }
+.carousel .scene .art:global(.hero-art) { position: absolute; z-index: 0; inset: 0; display: block; width: 100%; height: 100%; max-width: 100%; aspect-ratio: auto; object-fit: contain; object-position: right center; mask-image: none; }
+/* No visible control panel. Keyboard users can reveal a pause button on focus. */
+.carousel .pauseControl { position: absolute; z-index: 4; left: 6px; bottom: 6px; width: 1px; height: 1px; min-height: 0; padding: 0; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.carousel .pauseControl:focus-visible { display: inline-flex; align-items: center; gap: 5px; width: auto; height: auto; min-height: 30px; padding: 5px 8px; clip-path: none; background: #f4fbff; color: #17567c; font-size: 12px; outline: 2px solid #126b99; outline-offset: 1px; }
+@media (prefers-reduced-motion: reduce) { .slide { transition: none; } .carousel :global(.button) { transition: none; } }

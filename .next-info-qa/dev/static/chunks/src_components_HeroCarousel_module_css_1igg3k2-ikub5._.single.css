@@ -1,0 +1,78 @@
+/* [project]/src/components/HeroCarousel.module.css [app-client] (css) */
+.HeroCarousel-module__hy1Euq__carousel {
+  isolation: isolate;
+}
+
+.HeroCarousel-module__hy1Euq__scene {
+  isolation: isolate;
+  aspect-ratio: 1774 / 440;
+  order: 0;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.HeroCarousel-module__hy1Euq__slide {
+  pointer-events: none;
+  transition: opacity .55s ease-in-out;
+  position: absolute;
+  inset: 0;
+}
+
+.HeroCarousel-module__hy1Euq__carousel .HeroCarousel-module__hy1Euq__scene .HeroCarousel-module__hy1Euq__art.hero-art {
+  z-index: 0;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: right center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  inset: 0;
+  -webkit-mask-image: none;
+  mask-image: none;
+}
+
+.HeroCarousel-module__hy1Euq__carousel .HeroCarousel-module__hy1Euq__pauseControl {
+  z-index: 4;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+  width: 1px;
+  height: 1px;
+  min-height: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 6px;
+  left: 6px;
+  overflow: hidden;
+}
+
+.HeroCarousel-module__hy1Euq__carousel .HeroCarousel-module__hy1Euq__pauseControl:focus-visible {
+  clip-path: none;
+  color: #17567c;
+  outline-offset: 1px;
+  background: #f4fbff;
+  outline: 2px solid #126b99;
+  align-items: center;
+  gap: 5px;
+  width: auto;
+  height: auto;
+  min-height: 30px;
+  padding: 5px 8px;
+  font-size: 12px;
+  display: inline-flex;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .HeroCarousel-module__hy1Euq__slide {
+    transition: none;
+  }
+
+  .HeroCarousel-module__hy1Euq__carousel .button {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=src_components_HeroCarousel_module_css_1igg3k2-ikub5._.single.css.map*/

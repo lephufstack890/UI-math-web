@@ -1,0 +1,3 @@
+import {chromium} from '@playwright/test';
+import fs from 'node:fs';
+const browser=await chromium.launch({channel:'chrome',headless:true});const p=await browser.newPage();await p.goto('http://127.0.0.1:3100',{waitUntil:'networkidle'});const images=await p.locator('img').evaluateAll(imgs=>imgs.map(i=>({src:new URL(i.currentSrc).pathname,loaded:i.complete&&i.naturalWidth>0})));const invalid=images.filter(i=>!i.loaded||!(i.src==='/assets/hero-toan.png'||i.src.startsWith('/assets/toan/')));if(invalid.length)throw Error(JSON.stringify(invalid));const result={passed:true,images};fs.writeFileSync('artifacts/art-audit.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));await browser.close();

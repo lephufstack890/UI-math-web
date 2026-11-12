@@ -1,0 +1,2 @@
+import {chromium} from '@playwright/test';const b=await chromium.launch({channel:'chrome',headless:true}),p=await b.newPage();for(const route of ['/?muc=teachers','/?muc=register','/admin']){await p.goto('http://127.0.0.1:3100'+route,{waitUntil:'networkidle'});console.log(route,await p.locator('button').evaluateAll(xs=>xs.map(x=>({cls:x.className,t:x.innerText.slice(0,35),r:getComputedStyle(x).borderRadius,h:getComputedStyle(x).height})).filter(x=>x.cls.includes('button')||x.cls.includes('btn')||x.t.includes('Hồ sơ'))));}await b.close();
+
